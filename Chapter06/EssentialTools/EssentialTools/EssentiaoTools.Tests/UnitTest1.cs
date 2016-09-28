@@ -57,5 +57,16 @@ namespace EssentiaoTools.Tests
             Assert.AreEqual(5, discount5);
             Assert.AreEqual(0, discount0);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void discount_Negative_Total()
+        {
+            //arrange
+            IDiscountHelper target = getTestObject();
+
+            //act
+            target.ApplyDiscount(-1);
+        }
     }
 }
