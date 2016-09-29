@@ -12,6 +12,20 @@ namespace EssentiaoTools.Tests
         {
             return new MinimumDiscountHelper();
         }
+
+        [TestMethod]
+        public void Discount_Over_100()
+        {
+            //arrange
+            IDiscountHelper target = getTestObject();
+            decimal total = 200;
+
+            //act
+            var discountTotal = target.ApplyDiscount(total);
+
+            //assert
+            Assert.AreEqual(total*.9M, discountTotal);
+        }
         [TestMethod]
         public void TestMethod1()
         {
@@ -60,7 +74,7 @@ namespace EssentiaoTools.Tests
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
-        public void discount_Negative_Total()
+        public void Discount_Negative_Total()
         {
             //arrange
             IDiscountHelper target = getTestObject();
