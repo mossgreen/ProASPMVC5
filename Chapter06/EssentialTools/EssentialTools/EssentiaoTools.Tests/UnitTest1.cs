@@ -47,14 +47,14 @@ namespace EssentiaoTools.Tests
             IDiscountHelper target = getTestObject();
 
             //act 
-            decimal TenDollarDiscount = target.ApplyDiscount(10);
-            decimal HundredDollarDiscount = target.ApplyDiscount(100);
-            decimal FiftyDollarDiscount = target.ApplyDiscount(50);
+            decimal tenDollarDiscount = target.ApplyDiscount(10);
+            decimal hundredDollarDiscount = target.ApplyDiscount(100);
+            decimal fiftyDollarDiscount = target.ApplyDiscount(50);
 
             //assert
-            Assert.AreEqual(5, TenDollarDiscount, "$10 discount is wrong");
-            Assert.AreEqual(95, HundredDollarDiscount, "$100 discount is wrong");
-            Assert.AreEqual(45, FiftyDollarDiscount, "$50 discount is wrong");
+            Assert.AreEqual(5, tenDollarDiscount, "$10 discount is wrong");
+            Assert.AreEqual(95, hundredDollarDiscount, "$100 discount is wrong");
+            Assert.AreEqual(45, fiftyDollarDiscount, "$50 discount is wrong");
         }
 
         [TestMethod]
