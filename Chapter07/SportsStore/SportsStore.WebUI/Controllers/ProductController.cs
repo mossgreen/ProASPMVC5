@@ -12,14 +12,16 @@ namespace SportsStore.WebUI.Controllers
     {
         private IProductRepository repository;
 
+        //will lead Ninject to inject the dependency for product repository
         public ProductController(IProductRepository productRepository)
         {
             this.repository = productRepository;
         }
-        // GET: Product
-        public ActionResult Index()
+
+        public ViewResult List()
         {
-            return View();
+            /*without name -> default view*/
+            return View(repository.Products);
         }
     }
 }
