@@ -5,13 +5,16 @@
     ViewBag.Title = "Products";
 }
 
-<h2>List</h2>
+<h2>Products List</h2>
 
 @foreach (var p in Model)
 {
     <div>
         <h3>@p.Name</h3>
         @p.Description
-        <h4>@p.Price.ToString("c")</h4>
+        
+        @*renders numberical -> currency, 
+            as per the culture settings on ur server*@
+        <h4>@p.Price.ToString("c")</h4> 
     </div>
 }
