@@ -16,3 +16,8 @@ C:\Projects\ProASPMVC5\Chapter07\SportsStore\SportsStore.Domain\bin\Debug\System
 C:\Projects\ProASPMVC5\Chapter07\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojResolveAssemblyReference.cache
 C:\Projects\ProASPMVC5\Chapter07\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
 C:\Projects\ProASPMVC5\Chapter07\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb
+C:\Projects\ProASPMVC5\Chapter07\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll.config
+C:\Projects\ProASPMVC5\Chapter07\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.dll
+C:\Projects\ProASPMVC5\Chapter07\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\ProASPMVC5\Chapter07\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.xml
+C:\Projects\ProASPMVC5\Chapter07\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.xml

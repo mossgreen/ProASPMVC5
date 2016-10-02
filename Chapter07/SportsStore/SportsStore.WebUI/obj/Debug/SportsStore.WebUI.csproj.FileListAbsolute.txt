@@ -58,3 +58,7 @@ C:\Projects\ProASPMVC5\Chapter07\SportsStore\SportsStore.WebUI\bin\System.Web.Mv
 C:\Projects\ProASPMVC5\Chapter07\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.csprojResolveAssemblyReference.cache
 C:\Projects\ProASPMVC5\Chapter07\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.dll
 C:\Projects\ProASPMVC5\Chapter07\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.pdb
+C:\Projects\ProASPMVC5\Chapter07\SportsStore\SportsStore.WebUI\bin\EntityFramework.dll
+C:\Projects\ProASPMVC5\Chapter07\SportsStore\SportsStore.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Projects\ProASPMVC5\Chapter07\SportsStore\SportsStore.WebUI\bin\EntityFramework.xml
+C:\Projects\ProASPMVC5\Chapter07\SportsStore\SportsStore.WebUI\bin\EntityFramework.SqlServer.xml
