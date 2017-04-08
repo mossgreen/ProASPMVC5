@@ -1,9 +1,10 @@
 ﻿using Ninject;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
+using SportsStore.Domain.Abstract;
+using SportsStore.Domain.Entities;
+using Moq;
 
 namespace SportsStore.WebUI.Infrastructure
 {
@@ -19,7 +20,17 @@ namespace SportsStore.WebUI.Infrastructure
 
         private void AddBindings()
         {
-            throw new NotImplementedException();
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+
+            mock.Setup(m => 
+                m.Products)
+                .Returns(new 
+                    List<Product> { new Product { Name = "Football", Price = 25 }, new Product { Name = "Surf board", Price = 179 }, new Product { Name = "Running shoes", Price = 95 } });
+
+            /*Rather than create a new instance of the implementation object each time, 
+             * Ninject will always satisfy requests for the IProductRepository interface 
+             * with the same mock object.*/
+            kernel.Bind<IProductRepository>().ToConstant(mock.Object);
         }
 
         public object GetService(Type serviceType)
